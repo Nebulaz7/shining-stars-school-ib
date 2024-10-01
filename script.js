@@ -22,21 +22,36 @@ function showSlides() {
   slideIndex++;
   if (slideIndex > slides.length) {slideIndex = 1}
   slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 5000); // Change image every 4 seconds
+  setTimeout(showSlides, 5000); // Change image every 5 seconds
 } 
 
+// carousel in main body script
 
-var elScroll = document.querySelectorAll('.scroll'); //pega todos os elementos com a classe .scroll
-document.onscroll = function() { //ao rolar a tela...
-elScroll.forEach(elScroll => { //cada elemento com a classe .scroll ...
-var positionEl = elScroll.getBoundingClientRect(); //pega valores da posição do elemento
-var alturaEl = positionEl.top; //pega distancia do topo da tela
-if(alturaEl < 300) { //se a distancia do topo for menor que 300
-elScroll.classList.add('scroll--show'); //adiciona a classe .scroll--show
+let currentIndex = 0;
+
+function showSlide(index) {
+  const carousel = document.querySelector('.carousel');
+  const totalItems = document.querySelectorAll('.carousel-item').length;
+  if (index >= totalItems) {
+    currentIndex = 0;
+  } else if (index < 0) {
+    currentIndex = totalItems - 1;
+  } else {
+    currentIndex = index;
+  }
+  carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
 }
-});
+
+function nextSlide() {
+  showSlide(currentIndex + 1);
 }
 
+function prevSlide() {
+  showSlide(currentIndex - 1);
+}
 
+// Automatically switch slides every 5 seconds
+setInterval(nextSlide, 5000);
 
+// carousel ends
   
