@@ -5,6 +5,7 @@
 <title> Shining Stars</title>
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
@@ -19,11 +20,30 @@
             <li><a href="#">Admission</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
-        <div id="hamburger" class="hamburger">
+        <div id="hamburger" class="hamburger" onclick="toggleNav()">
             <i class="fa fa-bars"></i> 
         </div>
     </nav>
-    <button>Apply</button>
+    <button>Apply Now</button>
+
+    <!-- Side Navigation (Hamburger Menu) -->
+<div id="side-nav" class="side-nav">
+  <div class="side-nav-logo">
+    <h3>Stars School</h3>
+  </div>
+  <a href="javascript:void(0)" class="closebtn" onclick="toggleNav()"><i class="fa fa-xmark"></i></a>
+  <a href="#"><i class="fas fa-home"></i> Home</a>
+  <hr>
+  <a href="#"><i class="fas fa-info-circle"></i> About</a>
+  <hr>
+  <a href="#"><i class="fas fa-school"></i> Admission</a>
+  <hr>
+  <a href="#"><i class="fas fa-phone"></i> Contact</a>
+  <hr>
+  <button class="apply-btn">Apply Now</button>
+</div>
+
+
 </header>
 
 <main>
