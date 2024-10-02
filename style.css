@@ -46,15 +46,28 @@ header {
 nav ul {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 40px;
 }
 
 nav ul li a {
-  color: maroon;
   text-decoration: none;
-  font-weight: 600;
-  border: none;
+  color:maroon;
+  display: block;
+  padding: 40px 25px;
+  line-height: 1;
+  font-size: 20px;
+  transition: 0.3s;
 }
+
+nav ul li a:hover{
+  box-shadow: 0 -5px 0px maroon inset,
+  500px 0 0 rgba(243, 240, 240, 0.993) inset;
+
+  padding:35px 25px 41px 25px ;
+  
+}
+
+
 header button {
   text-decoration: none;
   display: flex;
@@ -363,8 +376,9 @@ color: #084dbb;
 }
 
 .carousel p {
-  font-weight: 300;
-  font-size: 1.2em;
+  font-weight: 600;
+  font-size: 0.9em;
+ 
   color: #666;
 }
 
