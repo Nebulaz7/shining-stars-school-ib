@@ -55,3 +55,12 @@ setInterval(nextSlide, 5000);
 
 // carousel ends
   
+  // side navigation toggle 
+  function toggleNav() {
+  const nav = document.getElementById("side-nav");
+  if (nav.style.width === "50%") {
+  nav.style.width = "0";
+  } else {
+  nav.style.width = "50%";
+  }
+  }
