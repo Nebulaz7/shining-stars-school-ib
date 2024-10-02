@@ -177,7 +177,7 @@ nav ul li {
    .carousel-container {
     position: relative;
     width: 100%;
-    height: 70vh; /* Adjusted height for small images */
+    height: 80vh; /* Adjusted height for small images */
     max-width: 1000px;
     margin: 0 auto;
     overflow: hidden;
@@ -376,9 +376,7 @@ color: #084dbb;
 }
 
 .carousel p {
-  font-weight: 600;
-  font-size: 0.9em;
- 
+  font-size: 1.2em;
   color: #666;
 }
 
@@ -406,15 +404,34 @@ color: #084dbb;
 }
 
 /* carousel ends */
+.abt-us{
+  font-size: 40px;
+  color: maroon;
+}
 
 .info{
   padding:15px 8px 32px 2px ;
  }
- .square-img {
-   max-height: 170px;
-   max-width: 60px;
+ .info::after {
+  content: "";
+  display: block;
+  clear: both;
+ }
+
+ .info > section{
+  float: left;
+  padding: 10px;
  }
  
+ .square-img{
+  width: 30%;
+ }
+
+ .info-txt{
+  width: 70%;
+  float: right;
+  padding-left: 9px;
+ }
 
 footer {
  margin: 0;
