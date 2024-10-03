@@ -191,8 +191,7 @@ nav ul li {
     position: fixed;
     top: 0;
     left: 0;
-    /* background-color: #2C3E50; Sleek dark background */
-    background-color: #f5f5dc;
+    background-color: #2C3E50; /* Sleek dark background */
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
