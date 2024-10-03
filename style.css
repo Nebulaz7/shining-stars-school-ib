@@ -61,7 +61,7 @@ nav ul li a {
 
 nav ul li a:hover{
   box-shadow: 0 -5px 0px maroon inset,
-  500px 0 0 rgba(243, 240, 240, 0.993) inset;
+  500px 0 0 #f9f9f9 inset;
 
   padding:35px 25px 41px 25px ;
   
@@ -191,7 +191,8 @@ nav ul li {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #2C3E50; /* Sleek dark background */
+    /* background-color: #2C3E50; Sleek dark background */
+    background-color: #f5f5dc;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -257,8 +258,19 @@ nav ul li {
     .side-nav .apply-btn:hover {
     background-color: #c0392b;
     }
-    
+  
+    /* why choose section */
 
+    .reasons-container {
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .reason-card {
+      width: 100%;
+    }
+
+  
 
   }
  
@@ -351,7 +363,7 @@ color: #084dbb;
   box-sizing: border-box;
   padding: 20px;
   text-align: center;
-  background-color: #f8f9fa;
+  background-color: #f5f5dc;
   border-radius: 10px;
 }
 
@@ -372,7 +384,7 @@ color: #084dbb;
 
 .carousel h3 {
   font-size: 1.5em;
-  color: #007bff;
+  color: #733939;
 }
 
 .carousel p {
@@ -388,7 +400,7 @@ color: #084dbb;
   top: 50%;
   transform: translateY(-50%);
   font-size: 2em;
-  color: #007bff;
+  color: #733939;
   cursor: pointer;
   z-index: 10;
 }
@@ -401,11 +413,64 @@ color: #084dbb;
   right: 10px;
 }
 
-.carousel-control:hover {
-  color: #0056b3;
-}
 
 /* carousel ends */
+
+
+/* Why Choose Section */
+.why-choose-section {
+  padding: 50px 20px;
+  background-color: #733939; 
+  text-align: center;
+  color: #2c3e50;
+}
+
+.why-choose-section h2 {
+  font-size: 2.4em;
+  margin-bottom: 40px;
+  color: #fff; 
+}
+
+.reasons-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.reason-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.reason-card i {
+  font-size: 3em;
+  color: #733939; /* color of the icon */
+  margin-bottom: 15px;
+}
+
+.reason-card h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #34495e;
+}
+
+.reason-card p {
+  font-size: 1em;
+  color: #7f8c8d;
+}
+
+.reason-card:hover {
+  transform: translateY(-10px); /* Slight lift effect on hover */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); 
+}
+
+
 
 .info{
   padding:15px 8px 32px 2px ;
