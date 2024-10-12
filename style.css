@@ -232,11 +232,11 @@ nav ul li {
     border-bottom: 1px solid #34495e;
     }
     
-    /* Horizontal Line Styling */
+    
     hr {
     margin: 0;
     border: 0;
-    border-top: 1px solid #34495e; /* Slightly lighter line color */
+    border-top: 1px solid #34495e; 
     }
     
     /* Apply Button in Side Nav */
@@ -246,7 +246,7 @@ nav ul li {
     padding: 12px 20px;
     margin: 20px 32px;
     color: #ecf0f1;
-    font-size: 1.1em; /* Slightly smaller button text */
+    font-size: 1.1em; 
     border-radius: 5px;
     cursor: pointer;
     display: block;
@@ -258,7 +258,7 @@ nav ul li {
     background-color: #c0392b;
     }
   
-    /* why choose section */
+    why choose section
 
     .reasons-container {
       flex-direction: column;
@@ -268,10 +268,34 @@ nav ul li {
     .reason-card {
       width: 100%;
     }
-
-  
-
+  /* event section   */
+    .events-container {
+    flex-direction: column;
+    gap: 30px;
   }
+  
+  .event-card {
+    width: 100%;
+  }
+   
+   
+   /* footer */
+   
+    .footer-container {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .footer-newsletter form {
+      flex-direction: column;
+    }
+
+    .footer-newsletter input {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+
+ }
  
  
  
@@ -297,7 +321,7 @@ nav ul li {
   background: #fff;
   color: #000;
   text-align: center;
-  height: 100vh;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -472,6 +496,78 @@ color: #084dbb;
 }
 
 
+/* Events Section */
+  .events-section {
+    padding: 50px 20px;
+    background-color: #f7f9fc; /* Light background */
+    color: #2c3e50;
+    text-align: center;
+  }
+
+  .events-section h2 {
+    font-size: 2.4em;
+    margin-bottom: 40px;
+    color: #34495e ; /* color for section title */
+  }
+
+  .events-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .event-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for card */
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .event-card:hover {
+    transform: translateY(-10px); /* Slight lift effect on hover */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* More shadow on hover */
+  }
+
+  .event-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+
+  .event-info {
+    padding: 20px;
+    text-align: left;
+  }
+
+  .event-info h3 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    color: #34495e;
+    display: flex;
+    align-items: center;
+  }
+
+  .event-info h3 i {
+    margin-right: 10px;
+    color: #733939; /* Icon color */
+  }
+
+  .event-info p {
+    font-size: 1em;
+    color: #7f8c8d;
+    margin-bottom: 8px;
+  }
+
+  .event-info p i {
+    margin-right: 8px;
+    color: #f5f5dc; /* Calendar icon color */
+  }
+
+  
+
 
 .info{
   padding:15px 8px 32px 2px ;
@@ -497,9 +593,182 @@ color: #084dbb;
   padding-left: 9px;
  }
 
-footer {
- margin: 0;
- padding: 0;
- color: #f2f2f2;
- background-color: #222222;
-}
+
+
+  /* Footer Section */
+  .footer-section {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 60px 20px;
+    text-align: left;
+    font-family: Arial, sans-serif;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    width: auto;
+    margin: 0 auto;
+  }
+
+  .footer-container div {
+    flex: 1;
+    min-width: 250px;
+  }
+
+  .footer-contact h3, .footer-links h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px; 
+    color: white; /* Accent color */
+  }
+
+  /* Contact Us */
+  .contact-info {
+    list-style: none;
+    padding: 0;
+  }
+
+  .contact-info li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+  }
+
+  .contact-info li i {
+    margin-right: 10px;
+    color: #1abc9c;
+  }
+
+  /* Quick Links */
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .footer-links ul li {
+    margin-bottom: 10px;
+  }
+
+  .footer-links ul li a {
+    text-decoration: none;
+    color: #ecf0f1;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+  }
+
+  .footer-links ul li a:hover {
+    color: #1abc9c;
+  }
+
+  /* Contact Form */
+  .orange {
+    color: #733939;
+  }
+  
+  .form-container {
+    max-width: 700px;
+    margin: 30px;
+    background-color: #001925;
+    padding: 30px;
+    border-left: 5px solid #733939;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%);
+  }
+  
+  .heading {
+    display: block;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+  }
+  
+  .form-container .form .input {
+    color: #87a4b6;
+    width: 100%;
+    background-color: #002733;
+    border: none;
+    outline: none;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+    border-left: 1px solid transparent;
+  }
+  
+  .form-container .form .input:focus {
+    border-left: 5px solid #733939;
+  }
+  
+  .form-container .form .textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: #013747;
+    color: #733939;
+    font-weight: bold;
+    resize: none;
+    max-height: 150px;
+    margin-bottom: 20px;
+    border-left: 1px solid transparent;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .form-container .form .textarea:focus {
+    border-left: 5px solid #733939;
+  }
+  
+  .form-container .form .button-container {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .form-container .form .button-container .send-button {
+    flex-basis: 70%;
+    background: #733939;
+    padding: 10px;
+    color: #001925;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid transparent;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .form-container .form .button-container .send-button:hover {
+    background: transparent;
+    border: 1px solid #733939;
+    color: #733939;
+  }
+  
+  .form-container .form .button-container .reset-button-container {
+    filter: drop-shadow(1px 1px 0px #733939);
+    flex-basis: 30%;
+  }
+  
+  .form-container .form .button-container .reset-button-container .reset-button {
+    position: relative;
+    text-align: center;
+    padding: 10px;
+    color: #733939;
+    font-weight: bold;
+    background: #001925;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%);
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .form-container .form .button-container .reset-button-container .reset-button:hover {
+    background: #733939;
+    color: #001925;
+  }
+  
+  
+
+  /* Footer Bottom */
+  .footer-bottom {
+    margin-top: 40px;
+    text-align: center;
+    color: white;
+    background: black;
+    font-size: 1em;
+  }
