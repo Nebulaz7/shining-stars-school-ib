@@ -811,7 +811,7 @@ color: #084dbb;
   
   /* Footer Bottom */
   .footer-bottom {
-    margin: 0;
+    margin-bottom: 40px;
     padding: 0;
     text-align: center;
     color: white;
