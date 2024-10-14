@@ -136,169 +136,6 @@ header button:hover {
    height: 90vh;
  }
  
- /* code for small screen sizes */
-
- @media screen and  (max-width: 768px) {
- 
-  .hamburger {
-    display: block;
-}
-header button {
-  display: none;
-}
-nav ul {
-    display: none;
-    flex-direction: column;
-    background-color: #4CAF50;
-    position: absolute;
-    top: 60px;
-    right: 0;
-    width: 100%;
-}
-
-nav ul.active {
-    display: flex;
-}
-
-nav ul li {
-    margin: 10px 0;
-    text-align: center;
-}
-
-
-
-   .carousel-img{height: 70vh;}
-   #school-classes{ display: flex; width: 100%; transition: all 0.5s;}
-   .kindergaten{ width: 33.3%;}
-   .primary{ width: 33.3%;}
-   .secondary{ width: 33.3%;}
-   
- /* carousel in main body */
-   .carousel-container {
-    position: relative;
-    width: 100%;
-    height: 80vh; /* Adjusted height for small images */
-    max-width: 1000px;
-    margin: 0 auto;
-    overflow: hidden;
-  }
-  
-    /* Side Navigation */
-    .side-nav {
-    height: 100%;
-    display: block;
-    width: 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: #2C3E50; /* Sleek dark background */
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-    z-index: 1000;
-    }
-    
-    .side-nav a {
-    padding: 14px 30px;
-    text-decoration: none;
-    font-size: 1.1em; /* Smaller text size */
-    color: #ecf0f1; /* Lighter text color for better contrast */
-    display: block;
-    transition: 0.3s;
-    font-weight: 500;
-    }
-    
-    .side-nav a i {
-    margin-right: 10px;
-    }
-    
-    .side-nav a:hover {
-    color: #733939; /* Hover color change */
-    }
-    
-    .side-nav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 35px;
-    margin-left: 50px;
-    }
-    
-    .side-nav-logo {
-    padding: 20px 32px;
-    text-align: center;
-    color: white;
-    font-size: 1.6em; /* Adjusted logo size */
-    border-bottom: 1px solid #34495e;
-    }
-    
-    
-    hr {
-    margin: 0;
-    border: 0;
-    border-top: 1px solid #34495e; 
-    }
-    
-    /* Apply Button in Side Nav */
-    .side-nav .apply-btn {
-    background-color: #e74c3c;
-    border: none;
-    padding: 12px 20px;
-    margin: 20px 32px;
-    color: #ecf0f1;
-    font-size: 1.1em; 
-    border-radius: 5px;
-    cursor: pointer;
-    display: block;
-    text-align: center;
-    transition: background-color 0.3s ease;
-    }
-    
-    .side-nav .apply-btn:hover {
-    background-color: #c0392b;
-    }
-  
-    why choose section
-
-    .reasons-container {
-      flex-direction: column;
-      gap: 30px;
-    }
-
-    .reason-card {
-      width: 100%;
-    }
-  /* event section   */
-    .events-container {
-    flex-direction: column;
-    gap: 30px;
-  }
-  
-  .event-card {
-    width: 100%;
-  }
-   
-   
-   /* footer */
-   
-    .footer-container {
-      flex-direction: column;
-      gap: 20px;
-    }
-
-    .footer-newsletter form {
-      flex-direction: column;
-    }
-
-    .footer-newsletter input {
-      margin-right: 0;
-      margin-bottom: 10px;
-    }
-
- }
- 
- 
- 
  
  /* fading animation*/
  .fade{
@@ -346,6 +183,106 @@ text-decoration: none;
 color: #084dbb;
 
 }
+
+/* Enquiries Section Styling */
+.enquiries-section {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #733939; 
+  color: #f5f5dc; 
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 20px;
+  font-family: 'Arial', sans-serif;
+  z-index: 1000;
+}
+
+.enquiry-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.1em;
+}
+
+.enquiry-item i {
+  font-size: 1.2em;
+  color: #39a073; 
+}
+
+.social-media a {
+  margin-left: 15px;
+  font-size: 1.5em;
+  color: #f5f5dc;
+  transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+  color: #39a073; 
+}
+
+.social-media i {
+  margin: 0 10px;
+}
+
+@media (max-width: 768px) {
+  .enquiries-section {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .enquiry-item {
+    font-size: 0.9em;
+    margin: 5px 0;
+  }
+
+  .social-media {
+    margin-top: 10px;
+  }
+}
+/* Back to Top Button */
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #733939; /* Deep red background */
+  color: #f5f5dc; /* Beige icon color */
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  font-size: 1.5em;
+  cursor: pointer;
+  z-index: 1000;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.back-to-top:hover {
+  background-color: #39a073; /* Complementary green */
+  transform: translateY(-3px);
+}
+
+.back-to-top i {
+  color: #f5f5dc; /* Beige */
+}
+
+.back-to-top.hidden {
+  display: none; /* Hide the button when not needed */
+}
+
+@media (max-width: 768px) {
+  .back-to-top {
+    width: 40px;
+    height: 40px;
+    font-size: 1.3em;
+  }
+}
+
+
 
 @keyframes fadeIn {
   0% {
@@ -567,6 +504,74 @@ color: #084dbb;
   }
 
   
+/* Testimonial Section */
+  .testimonial-section {
+    background-color: #f5f5dc; 
+    padding: 60px 20px;
+    color: #733939; 
+    font-family: 'Arial', sans-serif;
+  }
+
+  .testimonial-section h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #733939;
+  }
+
+  .testimonial-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .testimonial-card {
+    background-color: #733939;
+    color: #f5f5dc; 
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 350px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    position: relative;
+  }
+
+  .testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+  }
+
+  .testimonial-card .quote {
+    font-style: italic;
+    font-size: 1.2em;
+    margin: 15px 0;
+    position: relative;
+  }
+
+  .testimonial-card i {
+    color: #39a073; 
+  }
+
+  .testimonial-card h4 {
+    margin-top: 10px;
+    font-size: 1.1em;
+    color: #f5f5dc;
+  }
+
+  /* Student Image Styling */
+  .student-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #39a073; 
+    margin-bottom: 10px;
+  }
+
+
 
 
 .info{
@@ -601,7 +606,6 @@ color: #084dbb;
     color: #ecf0f1;
     padding: 60px 20px;
     text-align: left;
-    font-family: Arial, sans-serif;
   }
 
   .footer-container {
@@ -623,6 +627,52 @@ color: #084dbb;
     margin-bottom: 20px; 
     color: white; /* Accent color */
   }
+  
+  /* Newsletter Section */
+.footer-newsletter {
+  margin-top: 20px;
+}
+
+.footer-newsletter h3 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: #fff; 
+}
+
+.footer-newsletter form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer-newsletter input {
+  flex: 1;
+  padding: 10px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #34495e; 
+  color: #ecf0f1; /* Text color inside input */
+  font-size: 1em;
+}
+
+.footer-newsletter button {
+  padding: 10px 20px;
+  background-color: #733939; 
+  border: none;
+  color: white; 
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.footer-newsletter button:hover {
+  background-color: maroon;
+}
+
+
 
   /* Contact Us */
   .contact-info {
@@ -658,13 +708,10 @@ color: #084dbb;
   }
 
   .footer-links ul li a:hover {
-    color: #1abc9c;
+    color: #733939;
   }
 
   /* Contact Form */
-  .orange {
-    color: #733939;
-  }
   
   .form-container {
     max-width: 700px;
@@ -762,13 +809,194 @@ color: #084dbb;
     color: #001925;
   }
   
-  
-
   /* Footer Bottom */
   .footer-bottom {
-    margin-top: 40px;
+    margin: 0;
+    padding: 0;
     text-align: center;
     color: white;
-    background: black;
     font-size: 1em;
   }
+
+/* code for small screen sizes */
+
+ @media screen and  (max-width: 768px) {
+ 
+  .hamburger {
+    display: block;
+}
+header button {
+  display: none;
+}
+nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: #4CAF50;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+}
+
+nav ul.active {
+    display: flex;
+}
+
+nav ul li {
+    margin: 10px 0;
+    text-align: center;
+}
+
+
+
+   .carousel-img{height: 70vh;}
+   #school-classes{ display: flex; width: 100%; transition: all 0.5s;}
+   .kindergaten{ width: 33.3%;}
+   .primary{ width: 33.3%;}
+   .secondary{ width: 33.3%;}
+   
+ /* carousel in main body */
+   .carousel-container {
+    position: relative;
+    width: 100%;
+    height: 80vh; /* Adjusted height for small images */
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+    /* Side Navigation */
+    .side-nav {
+    height: 100%;
+    display: block;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #2C3E50; /* Sleek dark background */
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 1000;
+    }
+    
+    .side-nav a {
+    padding: 14px 30px;
+    text-decoration: none;
+    font-size: 1.1em; /* Smaller text size */
+    color: #ecf0f1; /* Lighter text color for better contrast */
+    display: block;
+    transition: 0.3s;
+    font-weight: 500;
+    }
+    
+    .side-nav a i {
+    margin-right: 10px;
+    }
+    
+    .side-nav a:hover {
+    color: #733939; /* Hover color change */
+    }
+    
+    .side-nav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 35px;
+    margin-left: 50px;
+    }
+    
+    .side-nav-logo {
+    padding: 20px 32px;
+    text-align: center;
+    color: white;
+    font-size: 1.6em; /* Adjusted logo size */
+    border-bottom: 1px solid #34495e;
+    }
+    
+    
+    hr {
+    margin: 0;
+    border: 0;
+    border-top: 1px solid #34495e; 
+    }
+    
+    /* Apply Button in Side Nav */
+    .side-nav .apply-btn {
+    background-color: #e74c3c;
+    border: none;
+    padding: 12px 20px;
+    margin: 20px 32px;
+    color: #ecf0f1;
+    font-size: 1.1em; 
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    }
+    
+    .side-nav .apply-btn:hover {
+    background-color: #c0392b;
+    }
+  
+    why choose section
+
+    .reasons-container {
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .reason-card {
+      width: 100%;
+    }
+  /* event section   */
+    .events-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .event-card {
+    width: 100%;
+  }
+  
+  /* Testimonial sectionn */
+   .testimonial-container {
+     flex-direction: column;
+     align-items: center;
+   }
+   
+   .testimonial-card {
+     max-width: 100%;
+   }
+   
+   /* footer */
+   
+    .footer-container {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .footer-newsletter form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .footer-newsletter input {
+    margin-bottom: 10px;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .footer-newsletter button {
+    width: 100%;
+  }
+    .form-container {
+      max-width: 300px;
+      
+    }
+
+ }
+ 
+ 
+ /* The End */

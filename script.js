@@ -64,3 +64,31 @@ function prevSlide() {
   nav.style.width = "50%";
   }
   }
+  
+
+  // Show/Hide Back to Top Button based on scroll position
+  const backToTopButton = document.querySelector('.back-to-top');
+
+  window.addEventListener('scroll', () => {
+    if (window.pageYOffset > 300) {
+      backToTopButton.classList.remove('hidden');
+    } else {
+      backToTopButton.classList.add('hidden');
+    }
+  });
+
+  // Smooth scroll to top when button is clicked
+  backToTopButton.addEventListener('click', (e) => {
+    e.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+
+  
+   AOS.init({     // initializing animate on scroll library 
+   duration: 1000, // Animation duration in ms
+   once: true // Whether animation should happen only once while scrolling
+ });
+
